@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./about.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./courses.css"/>
+    <title>Document</title>
+    <style>
+      
+/* Media Query */
+@media  screen and (max-width:600px) {
+
+    
+  h1{
+      font-size: 2.2rem;
+
+  }
+  h2{
+      font-size: 1.7rem;
+  }
+  h3{
+      font-size: 1.4rem;
+  }
+  h4{
+        font-size: 1.2rem;
+  }
+   #close-menu-btn{
+     display: none;
+  }
+  nav button{
+      display: inline-block;
+      background: transparent;
+      font-size: 1.8rem;
+      color: rgb(249, 249, 249);
+      cursor: pointer;
+  }
+ 
+  .nav_menu{
+     position: fixed;
+     top: 5rem;
+     right: 5%;
+     height: fit-content;
+     width: 18rem;
+     flex-direction: column;
+     gap: 0;
+     display: none;
+  }
+
+
+  .nav_menu li{
+      width: 100%;
+      height: 5.8rem;
+  }
+  .nav_menu li a{
+      background: var(--color-prim);
+      box-shadow: -4rem 6rem 10rem rgba(0,0,0.6);
+      width:100% ;
+      height: 100%;
+      display: grid;
+      place-items: center;
+  }
+  .nav_menu li a:hover{
+      background: var(--color-bg2);
+      color: var(--color-white);
+  }
+  .courses  h2{
+    position: relative;
+    right: 15rem;
+    width: max-content;
+  }
+ .courses_container{
+  position: relative;
+  
+ }
+ 
+ .footer_container{
+  position: relative;
+  top: 0rem;
+}
+.footer_copy small{
+ display: none;
+}
+}
+
+        .courses{
+            margin-top: 1rem;
+        }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="container nav_container">
+        <a href="index.html" style="font-size: 24px">Shikhsa </a>
+        <ul class="nav_menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <i id="open-menu-btn" class="bi bi-list-task"></i>
+      <i id="close-menu-btn" class="bi bi-x-lg"></i>
+      </div>
+    </nav>
+    
+    <section class="courses">
+        <h2 style="margin-left: 300px">Our Popular Courses</h2>
+        <div class="container courses_container">
+          <article class="course">
+            <div class="course_image">
+              <img src="./images/cour6.avif" style="height: 210px" />
+            </div>
+            <div class="course_info">
+              <h4>
+                Big Data
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                reiciendis porro id laborum vero incidunt mollitia!
+              </p>
+              <a href="courses.html" class="btn btn-primary">Learn More</a>
+            </div>
+          </article>
+          <article class="course">
+            <div class="course_image">
+              <img src="./images/cour2.avif" style="height: 210px" />
+            </div>
+            <div class="course_info">
+              <h4>
+                 HTML
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                reiciendis porro id laborum vero incidunt mollitia!
+              </p>
+              <a href="courses.html" class="btn btn-primary">Learn More</a>
+            </div>
+          </article>
+          <article class="course">
+            <div class="course_image">
+              <img src="./images/cour3.avif" style="height: 210px" />
+            </div>
+            <div class="course_info">
+              <h4>
+                 UI design
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                reiciendis porro id laborum vero incidunt mollitia!
+              </p>
+              <a href="courses.html" class="btn btn-primary">Learn More</a>
+            </div>
+          </article>
+          <article class="course">
+            <div class="course_image">
+              <img src="./images/course2.jpg" style="height: 210px" />
+            </div>
+            <div class="course_info">
+              <h4>
+                Cyber Security
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                reiciendis porro id laborum vero incidunt mollitia!
+              </p>
+              <a href="courses.html" class="btn btn-primary">Learn More</a>
+            </div>
+          </article>
+          <article class="course">
+            <div class="course_image">
+              <img src="./images/cour5.avif" style="height: 210px" />
+            </div>
+            <div class="course_info">
+              <h4>
+                Artifical Intelligence
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                reiciendis porro id laborum vero incidunt mollitia!
+              </p>
+              <a href="courses.html" class="btn btn-primary">Learn More</a>
+            </div>
+          </article>
+          <article class="course">
+            <div class="course_image">
+              <img src="./images/cour7.avif" style="height: 210px" />
+            </div>
+            <div class="course_info">
+              <h4>
+                Cloud Computing
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                reiciendis porro id laborum vero incidunt mollitia!
+              </p>
+              <a href="courses.html" class="btn btn-primary">Learn More</a>
+            </div>
+          </article>
+          <article class="course">
+            <div class="course_image">
+              <img src="./images/cour6.avif" style="height: 210px" />
+            </div>
+            <div class="course_info">
+              <h4>
+                Big Data
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                reiciendis porro id laborum vero incidunt mollitia!
+              </p>
+              <a href="courses.html" class="btn btn-primary">Learn More</a>
+            </div>
+          </article>
+          <article class="course">
+            <div class="course_image">
+              <img src="./images/cour8.avif" style="height: 210px" />
+            </div>
+            <div class="course_info">
+              <h4>
+               Automation
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                reiciendis porro id laborum vero incidunt mollitia!
+              </p>
+              <a href="courses.html" class="btn btn-primary">Learn More</a>
+            </div>
+          </article>
+          <article class="course">
+            <div class="course_image">
+              <img src="./images/cour9.jpg" style="height: 210px" />
+            </div>
+            <div class="course_info">
+              <h4>
+                SQL
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                reiciendis porro id laborum vero incidunt mollitia!
+              </p>
+              <a href="courses.html" class="btn btn-primary">Learn More</a>
+            </div>
+          </article>
+          <article class="course">
+            <div class="course_image">
+              <img src="./images/cour10.avif" style="height: 210px" />
+            </div>
+            <div class="course_info">
+              <h4>
+                React
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                reiciendis porro id laborum vero incidunt mollitia!
+              </p>
+              <a href="courses.html" class="btn btn-primary">Learn More</a>
+            </div>
+          </article>
+          <article class="course">
+            <div class="course_image">
+              <img src="./images/cour11.jpg" style="height: 210px" />
+            </div>
+            <div class="course_info">
+              <h4>
+                PhotoGraphy
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                reiciendis porro id laborum vero incidunt mollitia!
+              </p>
+              <a href="courses.html" class="btn btn-primary">Learn More</a>
+            </div>
+          </article>
+          <article class="course">
+            <div class="course_image">
+              <img src="./images/cour12.avif" style="height: 210px" />
+            </div>
+            <div class="course_info">
+              <h4>
+                Python
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                reiciendis porro id laborum vero incidunt mollitia!
+              </p>
+              <a href="courses.html" class="btn btn-primary">Learn More</a>
+            </div>
+          </article>
+          <article class="course">
+            <div class="course_image">
+              <img src="./images/cour14.jpg" style="height: 210px" />
+            </div>
+            <div class="course_info">
+              <h4>
+                Deep Learning
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                reiciendis porro id laborum vero incidunt mollitia!
+              </p>
+              <a href="courses.html" class="btn btn-primary">Learn More</a>
+            </div>
+          </article>
+          <article class="course">
+            <div class="course_image">
+              <img src="./images/cour15.jpg" style="height: 210px" />
+            </div>
+            <div class="course_info">
+              <h4>
+               Video Editing
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                reiciendis porro id laborum vero incidunt mollitia!
+              </p>
+              <a href="courses.html" class="btn btn-primary">Learn More</a>
+            </div>
+          </article>
+          <article class="course">
+            <div class="course_image">
+              <img src="./images/cour16.jpg" style="height: 210px" />
+            </div>
+            <div class="course_info">
+              <h4>
+                Trading
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                reiciendis porro id laborum vero incidunt mollitia!
+              </p>
+              <a href="courses.html" class="btn btn-primary">Learn More</a>
+            </div>
+          </article>
+          <article class="course">
+            <div class="course_image">
+              <img src="./images/cour17.jpg" style="height: 210px" />
+            </div>
+            <div class="course_info">
+              <h4>
+                Gaming
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                reiciendis porro id laborum vero incidunt mollitia!
+              </p>
+              <a href="courses.html" class="btn btn-primary">Learn More</a>
+            </div>
+          </article>
+          <article class="course">
+            <div class="course_image">
+              <img src="./images/cour18.jpg"style="height: 210px" />
+            </div>
+            <div class="course_info">
+              <h4>
+               IOT
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                reiciendis porro id laborum vero incidunt mollitia!
+              </p>
+              <a href="courses.html" class="btn btn-primary">Learn More</a>
+            </div>
+          </article>
+          <article class="course">
+            <div class="course_image">
+              <img src="./images/course11.jpg" style="height: 210px" />
+            </div>
+            <div class="course_info">
+              <h4>
+               Virtual Reality
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                reiciendis porro id laborum vero incidunt mollitia!
+              </p>
+              <a href="courses.html" class="btn btn-primary">Learn More</a>
+            </div>
+          </article>
+          <article class="course">
+            <div class="course_image">
+              <img src="./images/course1.jpg" style="height: 210px" />
+            </div>
+            <div class="course_info">
+              <h4>
+               UI Design
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                reiciendis porro id laborum vero incidunt mollitia!
+              </p>
+              <a href="courses.html" class="btn btn-primary">Learn More</a>
+            </div>
+          </article>
+          <article class="course">
+            <div class="course_image">
+              <img src="./images/cour1.avif" style="height: 210px" />
+            </div>
+            <div class="course_info">
+              <h4>
+                Digital Electronics
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                reiciendis porro id laborum vero incidunt mollitia!
+              </p>
+              <a href="courses.html" class="btn btn-primary">Learn More</a>
+            </div>
+          </article>
+          <article class="course">
+            <div class="course_image">
+              <img src="./images/cour20.jpg" style="height: 210px" />
+            </div>
+            <div class="course_info">
+              <h4>
+               
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                reiciendis porro id laborum vero incidunt mollitia!
+              </p>
+              <a href="courses.html" class="btn btn-primary">Learn More</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+     
+      <script src="/main.js"></script>
+ <!-- Footer  -->
+ <footer class="footer">
+    <div class="container footer_container">
+      <div class="footer__1">
+        <h4>Gabru</h4>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Asperiores, assumenda!
+        </p>
+      </div>
+      <div class="footer_2">
+        <h4>Permalinks</h4>
+        <ul class="pernalinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer_3">
+        <h4>Primacy</h4>
+        <ul class="privacy">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">Refund Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer_4">
+        <h4>Contact us</h4>
+        <div>
+          <p>9891526602<br />kumar.bkshiv@gmail.com</p>
+        </div>
+        <ul class="flex">
+          <li>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_copy">
+      <small>Copyright &copy; Gabru Youtube Tutorial</small>
+    </div>
+  </footer>
+</body>
+</html>

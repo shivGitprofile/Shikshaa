@@ -1,0 +1,238 @@
+
+.bahar{
+    background-color:rgb(27, 27, 67) ;
+    /* padding: 14rem; */
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem ;
+    width: 70rem;
+    height:27rem;
+    margin: 7rem auto;
+    border-radius: 1rem; 
+} 
+.IIMT{
+    height: 0;
+
+}
+ .contact_aside{
+   width: 23rem;
+   height: 42rem;
+    background: var(--color-prim);
+    padding: 3rem ;
+    border-radius: 1rem;
+    position: relative;
+    bottom: 39rem;
+
+
+}
+.img_aside{
+    width: 12rem;
+    margin-bottom: 2rem;
+}
+.contact_aside h2{
+    text-align: left;
+    margin-bottom: 1rem;
+
+}
+.contact_aside p{
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+.contact_detail li {
+display: flex;
+gap:0.8rem;
+margin-top: 1rem;
+/* bottom: 1rem; */
+margin-bottom: 1rem;
+
+
+} 
+.social_detail{
+    display: flex;
+    margin-top: 29px;
+    gap: 1rem;
+    align-items:center ;
+}
+.contact_form {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 600px;
+    /* margin: 20px auto; */
+    margin: -460px 0px 120px 520px;
+    padding: 20px;
+    background: transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form info container styling */
+.form_info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Input styling */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+}
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    /* width: 100%; */
+    padding: 14px 40px;
+    font-size: 16px;
+    margin-left: 6px;
+    /* text-align: center; */
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn_primary {
+    background-color: #db3c34;
+    color: #fff;
+}
+
+/* Hover effect on buttons */
+.btn:hover {
+    opacity: 0.8;
+}
+input,textarea{
+    width: 100%;
+    padding: 1rem;
+    background: var(--color-bg);
+    color: white;
+    margin-left: 0.3rem;
+}
+    
+/* Media Query */
+@media  screen and (max-width:600px) {
+ .bahar{
+  width: fit-content;
+ }
+    h1{
+        font-size: 2.2rem;
+  
+    }
+    h2{
+        font-size: 1.7rem;
+    }
+    h3{
+        font-size: 1.4rem;
+    }
+    h4{
+          font-size: 1.2rem;
+    }
+     #close-menu-btn{
+       display: none;
+    }
+    nav button{
+        display: inline-block;
+        background: transparent;
+        font-size: 1.8rem;
+        color: rgb(249, 249, 249);
+        cursor: pointer;
+    }
+   
+    .nav_menu{
+       position: fixed;
+       top: 5rem;
+       right: 5%;
+       height: fit-content;
+       width: 18rem;
+       flex-direction: column;
+       gap: 0;
+       display: none;
+    }
+  
+  
+    .nav_menu li{
+        width: 100%;
+        height: 5.8rem;
+    }
+    .nav_menu li a{
+        background: var(--color-prim);
+        box-shadow: -4rem 6rem 10rem rgba(0,0,0.6);
+        width:100% ;
+        height: 100%;
+        display: grid;
+        place-items: center;
+    }
+    .nav_menu li a:hover{
+        background: var(--color-bg2);
+        color: var(--color-white);
+    }
+   /* Responsive CSS for Phones */
+/* Responsive CSS for Phones */
+
+/* Contact Section */
+.contact {
+  padding: 2rem 1rem; /* Adjust padding for smaller screens */
+}
+
+.IIMT {
+  display: flex;
+  flex-direction: column; /* Change to column layout for smaller screens */
+  align-items: center; /* Center align items */
+}
+
+.contact_aside {
+  width: 100%; /* Adjust width to fit smaller screens */
+  padding: 2rem; /* Adjust padding */
+  margin-bottom: 2rem; /* Add margin to separate from form */
+}
+
+.contact_form {
+  max-width: 100%; /* Adjust max-width to fit smaller screens */
+  width: 100%; 
+  margin-top: 6rem; /* Add margin to separate from contact_aside */
+ margin-left: 0px;
+ background-color: rgb(20, 20, 23);
+}
+
+/* Form Info container */
+.form_info {
+  flex-direction: column; /* Change to column layout for smaller screens */
+}
+
+/* Input and Textarea styling */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  margin-bottom: 1rem; /* Adjust margin for spacing */
+}
+
+/* Button styling */
+.btn {
+  width: 100%; /* Make button full-width */
+}
+
+/* Footer */
+.footer_container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.footer__1,
+.footer_2,
+.footer_3,
+.footer_4 {
+  flex-basis: 100%; /* Make footer columns full-width on smaller screens */
+  margin-bottom: 2rem; /* Add margin between columns */
+}
+
+.footer_copy {
+  text-align: center; /* Center align footer copyright */
+}
+
+}

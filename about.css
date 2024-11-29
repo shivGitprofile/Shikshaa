@@ -1,0 +1,208 @@
+
+.about_achievements{
+    margin-top: 3rem;
+    /* margin-bottom: 6rem; */
+
+
+}
+.abt_achv_conatiner{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap:1.5rem;
+    height: 387px;
+}
+.achv_cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+
+}
+.achv_card{
+    background: var(--color-bg2);
+    padding: 2.3rem;
+    border-radius:1rem ;
+    text-align: center;
+    transition: var(--transition);
+}
+.achv_card:hover{
+    background: var(--color-bg2);
+    box-shadow: 0 3rem 3rem rgba(0,0,0,0.3);
+}
+.Achv_imgcon img{
+
+width: 6rem;
+height: 6rem;
+margin-bottom: 1rem;
+border-radius: 1rem;
+}
+ .achv_left img{
+    width: 26rem;
+    height: 36rem;
+    margin-right:80px;
+} 
+/* Team Member */
+.team{
+    position: relative;
+    background: var(--color-bg1);
+    box-shadow: inset 0 0 3rem  rgba(0,0,0,0.5);
+    margin-top: 6rem;
+   
+}
+.team_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+}
+.team h2{
+    margin-bottom: 60px;
+}
+.team_member{
+    background: var(--color-bg2);
+    padding: 2rem;
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+.team_member:hover{
+    background: transparent;
+    border-color: var(--color-prim);
+}
+.team_member-img img{ 
+ width: 157px;
+ height: 260px;
+  filter: saturate(0);
+}
+.team_member:hover img{ 
+    filter: saturate(1);
+  }
+  
+.team_info{
+    text-align: center;
+    margin-top: 1.4rem;
+}
+.team_info p{
+    color:var(--color-light);
+}
+.team_social{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-prim);
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: -2rem 0 2rem rgba(0,0,0,0.3);
+    transition: var(--transition);
+    
+}
+.team_member:hover .team_social{
+    right: 0;
+}
+.team_social a{
+    padding: 1rem;
+}
+
+/* Media Query */
+@media  screen and (max-width:600px) {
+    .container{
+        width: 90%;
+        /* overflow: hidden; */
+    }
+    h1{
+        font-size: 2.2rem;
+ 
+    }
+    h2{
+        font-size: 1.7rem;
+    }
+    h3{
+        font-size: 1.4rem;
+    }
+    h4{
+          font-size: 1.2rem;
+    }
+     #close-menu-btn{
+       display: none;
+    }
+    nav button{
+        display: inline-block;
+        background: transparent;
+        font-size: 1.8rem;
+        color: rgb(249, 249, 249);
+        cursor: pointer;
+    }
+   
+    .nav_menu{
+       position: fixed;
+       top: 5rem;
+       right: 5%;
+       height: fit-content;
+       width: 18rem;
+       flex-direction: column;
+       gap: 0;
+       display: none;
+    }
+
+
+    .nav_menu li{
+        width: 100%;
+        height: 5.8rem;
+    }
+    .nav_menu li a{
+        background: var(--color-prim);
+        box-shadow: -4rem 6rem 10rem rgba(0,0,0.6);
+        width:100% ;
+        height: 100%;
+        display: grid;
+        place-items: center;
+    }
+    .nav_menu li a:hover{
+        background: var(--color-bg2);
+        color: var(--color-white);
+    }
+    .abt_achv_conatiner{
+        grid-template-columns: 1fr;
+    }
+   .achv_right p,h1{
+    width: 90%;
+   }
+    .achv_left img{
+        width: 90%;
+        height: 19rem;
+        /* display: none; */
+    }
+    .achv_cards{
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+        top: 2rem;
+    }
+    .team{
+        width: fit-content;
+        height: 128rem;
+    }
+    .team h2{
+        position: relative;
+        top: 38rem;
+    }
+
+    .team_container{
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+        top: 38rem;
+    }
+    .team_member-img img{
+    
+        position: relative;
+        right:15px;
+       
+    }
+    .footer_container{
+        position: relative;
+        top: 50rem;
+    }
+    .footer_copy small{
+        position: relative;
+        top: 35rem;
+    }
+}
